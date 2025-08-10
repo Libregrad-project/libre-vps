@@ -5,6 +5,7 @@ pub struct CustomProviderService {
     client: Client,
     cc_api_key: String,
     cc_base_url: String,
+    cc_control_server_ip: String,
 }
 
 impl CustomProviderService {
@@ -15,7 +16,8 @@ impl CustomProviderService {
         Self {
             client: Client::new(),
             cc_base_url,
-            cc_api_key,,
+            cc_api_key,
+            cc_control_server_ip,
         }
     }
   // TODO: Implement our own backend, no provider except ourselfs.
