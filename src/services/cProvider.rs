@@ -6,6 +6,7 @@ pub struct CustomProviderService {
     cc_api_key: String,
     cc_base_url: String,
     cc_control_server_ip: String,
+    cc_control_server_password: String,
 }
 
 impl CustomProviderService {
@@ -18,6 +19,7 @@ impl CustomProviderService {
             cc_base_url,
             cc_api_key,
             cc_control_server_ip,
+            cc_control_server_password,
         }
     }
   // TODO: Implement our own backend, no provider except ourselfs.
