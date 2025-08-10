@@ -3,18 +3,23 @@ use serde_json::Value;
 
 pub struct CustomProviderService {
     client: Client,
-    api_key: String,
+    cc_api_key: String,
+    cc_base_url: String,
 }
 
 impl CustomProviderService {
-    pub fn new(api_key: String) -> Self {
+    pub fn new(
+        cc_base_url: String,
+        cc_api_key: String,
+    ) -> Self {
         Self {
             client: Client::new(),
-            api_key,
+            cc_base_url,
+            cc_api_key,,
         }
     }
-
   // TODO: Implement our own backend, no provider except ourselfs.
+
 }
 
 
